@@ -97,6 +97,10 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
+.textgreen {
+    color: green; 
+}
+
 /* Call To Action (CTA) Styles */
 
 .cta {

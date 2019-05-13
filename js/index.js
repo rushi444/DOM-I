@@ -43,8 +43,27 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const topNav = document.querySelectorAll('a'); 
 for(let i = 0; i < topNav.length; i++) {
-  topNav[i].textContent = siteContent['nav'][`nav-item-${i + 1}`]
+  topNav[i].textContent = siteContent['nav'][`nav-item-${i + 1}`]; 
+  topNav[i].style.color = 'green'; 
 }; 
+
+const newNav = document.querySelector('nav'); 
+const navTest = document.createElement('a'); 
+const navInsta = document.createElement('a'); 
+
+navTest.href = '#'; 
+navTest.textContent = 'Testimonials'; 
+navTest.style.color = 'green';
+navInsta.href = '#'; 
+navInsta.textContent = 'Instagram'; 
+navInsta.style.color = 'green'; 
+
+newNav.append(navTest); 
+newNav.prepend(navInsta); 
+
+
+
+
 
 const ctaH1 = document.querySelector('h1'); 
 ctaH1.textContent = siteContent['cta']['h1']; 
